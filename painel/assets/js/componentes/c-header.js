@@ -7,7 +7,7 @@ export default {
         <div class="header-brand">
         
             <a href="">
-            <img alt="Logo" src="../assets/logo/logo.svg" class="h-25px h-lg-25px" />
+            <img alt="Logo" src="../assets/logo/logo.png" class="h-25px h-lg-25px" />
         </a>
          
             <div id="kt_aside_toggle" class="btn btn-icon w-auto px-0 btn-active-color-primary aside-minimize" data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body" data-kt-toggle-name="aside-minimize">
@@ -78,7 +78,7 @@ export default {
                  
                     <span class="fs-7 fw-bolder text-gray-700 pe-4 text-nowrap d-none d-xxl-block"></span>
                        
-                    ID 1 - Doar Digital 
+                    ID 1 - Gov 
                 
                 
                 </div>

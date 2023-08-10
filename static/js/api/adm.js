@@ -316,16 +316,7 @@ export default {
     async uploadImg(
         form
     ) {
-        console.log(form)
-        let res = await fetch(`https://doardigital.tk/api/upload-img`, {
-
-            method: 'POST',
-            mode: 'cors',
-            cache: 'default',
-            body: form,
-
-        })
-        return await res.json()
+         
 
     },
 

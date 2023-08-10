@@ -11,6 +11,11 @@ export default {
     },
 	methods: {
         async logar() {
+           window.location.href = `/painel/index.html#/`
+           //  window.location.href = `#/`
+        },
+
+        async logar1() {
 			this.error = null
 			
 			// localStorage.removeItem('token')
@@ -26,6 +31,7 @@ export default {
             localStorage.setItem('token', res.token)
             window.location.href = `#/`
         },
+
         updateForm(event) {
             this[event.name] = event.value
         }

@@ -1,14 +1,6 @@
 @charset "UTF-8";
 
 
-
-.btn.btn-primary {
-    color: #fff;
-    border-color: #009ef7;
-    background-color: #009ef7;
-}
-
-
 :root {
     --bs-blue: #009ef6;
     --bs-indigo: #6610f2;
@@ -7494,16 +7486,16 @@ fieldset:disabled .btn {
 
 .link-light:focus,
 .link-light:hover {
-    color: #f7f9fb
+    color: #aa0c33
 }
 
 .link-primary {
-    color: #009ef7
+    color: #f32f5f
 }
 
 .link-primary:focus,
 .link-primary:hover {
-    color: #33b1f9
+    color: #f32f5f
 }
 
 .link-secondary {
