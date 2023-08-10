@@ -1,6 +1,5 @@
 import get_template from './get_template.js'
 import menus from '../vendor/lista-menu.js'
-import adm from "../../../../static/js/api/adm.js"
 
 export default {
     data: function () {
@@ -17,27 +16,6 @@ export default {
 
     async mounted() {
 
-        let dados = (await this.listar()).dados
-        this.nome = dados.nome.split(' ')[0]
-        this.gravatar = dados.gravatar
-        this.superAdm = dados.super_adm || "777"
-
-        this.id = dados.credencial_id || "777"
-
-
-        this.permisao = (await this.credenciais()).dados.recursos
-
-        let recursos = this.permisao
-        let adm = this.superAdm
-
-
-        if (adm == '1') {
-            this.lista = this.menus
-        } else if (adm == '0') {
-            this.lista = this.menus.filter(itens => this.superAdm.includes(itens.permisao2))
-        } else {
-            this.lista = this.menus.filter(itens => recursos.includes(itens.id))
-        }
 
     },
 

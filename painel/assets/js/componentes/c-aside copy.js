@@ -1,5 +1,4 @@
-import menus from '../domain/lista-menu.js'
-import adm from "../../../../static/js/api/adm.js"
+import menus from '../domain/lista-menu.js' 
 
 export default {
     template: ` 
