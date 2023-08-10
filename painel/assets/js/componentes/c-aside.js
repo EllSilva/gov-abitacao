@@ -2,8 +2,8 @@
 
 export default {
     template: ` 
-	<div>
-
+    <div>
+    data-kt-menu-trigger
 	<!--begin::aside-->
     <div id="kt_aside" class="aside" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle">
   
@@ -62,7 +62,8 @@ export default {
                     <span class="menu-section text-muted text-uppercase fs-8 ls-1">Crafted</span>
                 </div>
             </div>
-            <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+  
+            <div data-kt-menu-trigger="click" class="menu-item menu-accordion hover " v-bind:class="{ show: isActive }" @click="isActive = !isActive">
                 <span class="menu-link">
                     <span class="menu-icon">
                         <!--begin::Svg Icon | path: icons/duotune/general/gen022.svg-->
@@ -79,222 +80,8 @@ export default {
                     <span class="menu-title">Pages</span>
                     <span class="menu-arrow"></span>
                 </span>
-                <div class="menu-sub menu-sub-accordion menu-active-bg">
-                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                        <span class="menu-link">
-                            <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
-                            </span>
-                            <span class="menu-title">Profile</span>
-                            <span class="menu-arrow"></span>
-                        </span>
-                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/profile/overview.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Overview</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/profile/projects.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Projects</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/profile/campaigns.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Campaigns</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/profile/documents.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Documents</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/profile/connections.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Connections</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/profile/activity.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Activity</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                        <span class="menu-link">
-                            <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
-                            </span>
-                            <span class="menu-title">Projects</span>
-                            <span class="menu-arrow"></span>
-                        </span>
-                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/list.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">My Projects</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/project.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">View Project</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/targets.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Targets</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/budget.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Budget</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/users.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Users</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/files.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Files</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/activity.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Activity</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/projects/settings.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Settings</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                        <span class="menu-link">
-                            <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
-                            </span>
-                            <span class="menu-title">Wizards</span>
-                            <span class="menu-arrow"></span>
-                        </span>
-                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/wizards/horizontal.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Horizontal</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/wizards/vertical.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Vertical</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                        <span class="menu-link">
-                            <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
-                            </span>
-                            <span class="menu-title">Search</span>
-                            <span class="menu-arrow"></span>
-                        </span>
-                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/search/horizontal.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Horizontal</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/search/vertical.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Vertical</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                        <span class="menu-link">
-                            <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
-                            </span>
-                            <span class="menu-title">Blog</span>
-                            <span class="menu-arrow"></span>
-                        </span>
-                        <div class="menu-sub menu-sub-accordion menu-active-bg">
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/blog/home.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Blog Home</span>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a class="menu-link" href="../../demo8/dist/pages/blog/post.html">
-                                    <span class="menu-bullet">
-                                        <span class="bullet bullet-dot"></span>
-                                    </span>
-                                    <span class="menu-title">Blog Post</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="menu-sub menu-sub-accordion menu-active-bg" v-bind:class="{ show: isActive }">
+                  
                     <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                         <span class="menu-link">
                             <span class="menu-bullet">
@@ -806,6 +593,7 @@ export default {
 
     data: function () {
         return {
+            isActive: true,
             gravatar: '',
             superAdm: '',
             
@@ -819,7 +607,9 @@ export default {
     },
 
     methods: {
-         
+        async count() {
+            this.isActive = false
+        }, 
 
          async logout() {
              localStorage.removeItem('token')
