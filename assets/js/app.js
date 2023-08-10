@@ -6,18 +6,7 @@ import get_template from './components/get_template.js'
 Vue.use(window.vuelidate.default)
 Vue.use(VueMask.VueMaskPlugin);
 
-// IMPORTANDO COMPONENTES
-import header from './components/c-header.js'
-Vue.component('c-header', header)
 
-import aside from './components/c-aside.js'
-Vue.component('c-aside', aside)
-
-import detalhe from './components/c-detalhe.js'
-Vue.component('c-detalhe', detalhe)
-
-import mensagem from './components/c-mensagem.js'
-Vue.component('c-mensagem', mensagem)
 
 // IMPORTANDO PÁGINAS
 import page_login from './view/admin/home.js'

@@ -896,31 +896,31 @@ export default {
 
     async mounted() {
 
-        let dados = (await this.listar()).dados
-        this.nome = dados.nome.split(' ')[0]
-        this.gravatar = dados.gravatar
-        this.superAdm = dados.super_adm || "777"
+        // let dados = (await this.listar()).dados
+        // this.nome = dados.nome.split(' ')[0]
+       //  this.gravatar = dados.gravatar
+      //   this.superAdm = dados.super_adm || "777"
         //  so mudar pelo credencial_id
         //   this.id = dados.data_nascimento
-        this.id = dados.credencial_id || "777"
+       //  this.id = dados.credencial_id || "777"
 
 
-        this.permisao = (await this.credenciais()).dados.recursos
+        // this.permisao = (await this.credenciais()).dados.recursos
 
 
-        let recursos = this.permisao
+      //   let recursos = this.permisao
 
        // let adm = this.superAdm
-            let adm = '0'
-            console.log('olaa1111111');
-        if (adm == '1') {
-            this.lista = this.menus
-        } else if (adm == '0') {
-            console.log('olaa');
-            this.lista = this.menus.filter(itens => adm.includes(itens.permisao2))
-        } else {
-            this.lista = this.menus.filter(itens => recursos.includes(itens.id))
-        }
+       //      let adm = '0'
+        //     console.log('olaa1111111');
+        // if (adm == '1') {
+        //     this.lista = this.menus
+        // } else if (adm == '0') {
+         //    console.log('olaa');
+         //    this.lista = this.menus.filter(itens => adm.includes(itens.permisao2))
+        // } else {
+        //     this.lista = this.menus.filter(itens => recursos.includes(itens.id))
+        // }
     },
 
     async created() {
