@@ -10,7 +10,7 @@ export default {
     },
 	methods: {
         async logar() {
-           window.location.href = `gov-abitacao/painel/index.html#/`
+           window.location.href = `painel/index.html#/`
            //  window.location.href = `#/`
         },
  
