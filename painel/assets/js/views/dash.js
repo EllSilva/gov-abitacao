@@ -1677,7 +1677,7 @@ export default {
 	},
 
 	mounted() {
-	   this.istituicaoDashboard() 
+
 	 
 
 	//	let token_payload = token.split('.')[0]
