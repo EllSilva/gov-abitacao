@@ -4,8 +4,8 @@ import store from './domain/store.js'
 
 import { mapState } from './vendor/vuex.js'
 
-Vue.use(window.vuelidate.default)
-Vue.use(VueMask.VueMaskPlugin);
+//	Vue.use(window.vuelidate.default)
+//	Vue.use(VueMask.VueMaskPlugin);
 
 Vue.use(Router)
 import routes from './domain/list-router.js'
@@ -22,14 +22,8 @@ Vue.component('c-mensagem', mensagem)
 
 import loading from './componentes/c-loading.js'
 Vue.component('c-loading', loading)
-
-
-import validacao from './componentes/c-validacao.js'
-Vue.component('c-validacao', validacao)
-
-import detalhe from './componentes/c-detalhe.js'
-Vue.component('c-detalhe', detalhe)
-
+ 
+ 
 import dash from './views/dash.js'
 Vue.component('c-dash', dash)
  

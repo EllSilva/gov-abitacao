@@ -1,4 +1,4 @@
-import adm from "../../../../../static/js/api/adm.js"
+ 
 
 export default {
 	template: `
@@ -1602,76 +1602,12 @@ export default {
 	methods: {
 
 		async istituicaoDashboard() {
-			this.error = null
-
-			let res = await adm.dashboardInstituicao(
-				this.token,
-				this.instituicao_id,
-			)
-			if (!res.next) {
-				this.jms = res.next,
-				 this.error = res.message
-				return null
-			}
-
-			    this.jms = res.next,
-				this.msg = res.message
-			//	this.dash_inst = res.dados.boleto || {} 
-				console.log(this.dash_inst)
-
-				this.cartao_total = parseInt(res.dados.credit_card.total)
-				this.boleto_total = parseInt(res.dados.boleto.total)
-				this.pix_total = parseInt(res.dados.PIX.total)
-				this.doacao_total  =  this.cartao_total + this.boleto_total + this.pix_total
-				
-				var unicoC = parseInt(res.dados.credit_card.unico.paid.total)
-				var recorentC = parseInt(res.dados.credit_card.recorrente.paid.total)
-				var unicoP = parseInt(res.dados.PIX.unico.paid.total)
-				var recorentP = parseInt(res.dados.PIX.recorrente.paid.total)
-				var unicoB = parseInt(res.dados.boleto.unico.paid.total)
-				var recorentB = parseInt(res.dados.boleto.recorrente.paid.total)
-				
-				this.cartao_concluido = unicoC + recorentC
-				this.boleto_concluido = unicoB + recorentB
-				this.pix_concluido = unicoP + recorentP 
-				this.concluido_total = this.cartao_concluido + this.boleto_concluido + this.pix_concluido
-
-
-
-				var unicoAC = parseInt(res.dados.credit_card.unico.waiting_payment.total)
-				var recorentAC = parseInt(res.dados.credit_card.recorrente.waiting_payment.total)
-				var unicoAP = parseInt(res.dados.PIX.unico.waiting_payment.total)
-				var recorentAP = parseInt(res.dados.PIX.recorrente.waiting_payment.total)
-				var unicoAB = parseInt(res.dados.boleto.unico.waiting_payment.total)
-				var recorentAB = parseInt(res.dados.boleto.recorrente.waiting_payment.total)
-
-				this.cartao_aberto = unicoAC + recorentAC
-				this.boleto_aberto = unicoAB + recorentAB
-				this.pix_aberto = unicoAP + recorentAP 
-				this.aberto_total = this.cartao_aberto + this.boleto_aberto + this.pix_aberto
-
-				var unicoFC = parseInt(res.dados.credit_card.unico.refused.total)
-				var recorentFC = parseInt(res.dados.credit_card.recorrente.refused.total)
-				var unicoFP = parseInt(res.dados.PIX.unico.refused.total)
-				var recorentFP = parseInt(res.dados.PIX.recorrente.refused.total)
-				var unicoFB = parseInt(res.dados.boleto.unico.refused.total)
-				var recorentFB = parseInt(res.dados.boleto.recorrente.refused.total)
-
-				this.cartao_falhado = unicoFC + recorentFC
-				this.boleto_falhado = unicoFB + recorentFB
-				this.pix_falhado = unicoFP + recorentFP 
-				this.falhado_total = this.cartao_falhado + this.boleto_falhado + this.pix_falhado
-
-			return res
+			 
 
 		},
 
 			async dashboardInst() {
-			let res = await adm.dashboardInstituicao(
-				this.token,
-				this.instituicao_id,
-			)
-			return res
+		 
 		},
 
 	},
