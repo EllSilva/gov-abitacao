@@ -1,6 +1,5 @@
 import get_template from '../../components/get_template.js'
-import adm from "../../../../../static/js/api/adm.js" 
-
+ 
 export default {
     data: function () {
 		return {
@@ -14,23 +13,7 @@ export default {
            window.location.href = `/painel/index.html#/`
            //  window.location.href = `#/`
         },
-
-        async logar1() {
-			this.error = null
-			
-			// localStorage.removeItem('token')
-            let res = await adm.login(
-                this.user,
-                this.senha
-            )
-            if (!res.next) {
-				console.log(res)
-                this.error = res.message
-                return null
-            }
-            localStorage.setItem('token', res.token)
-            window.location.href = `#/`
-        },
+ 
 
         updateForm(event) {
             this[event.name] = event.value

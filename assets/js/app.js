@@ -3,8 +3,8 @@ import Vue from './vendor/vue.js'
 import Router from './vendor/vue-router.js'
 
 import get_template from './components/get_template.js'
-Vue.use(window.vuelidate.default)
-Vue.use(VueMask.VueMaskPlugin);
+// Vue.use(window.vuelidate.default)
+// Vue.use(VueMask.VueMaskPlugin);
 
 
 
