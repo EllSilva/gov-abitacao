@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="card shadow-lg o-hidden border-0 my-5">
+        <div class="card-body p-0">
+            <div class="row">
+                <div class="col-lg-5 d-none d-lg-flex">
+                    <div class="flex-grow-1 bg-register-image"
+                        style="background-image: url(&quot;assets/img/luanda.png&quot;);"></div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-5">
+                        <div class="text-center">
+                            <h4 class="text-dark mb-4">Criar conta</h4>
+                        </div>
+                        <form class="user" action="javascript:void(0)" @submit="cadastra">
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input class="form-control form-control-user" type="text" v-model="nome"
+                                        id="exampleFirstName" required placeholder="Nome" name="first_name">
+                                </div>
+                                <div class="col-sm-6"><input class="form-control form-control-user" type="text"  v-model="sobrenome"
+                                        id="exampleFirstName" required placeholder="Sobrenome" name="last_name"></div>
+                            </div>
+                            <div class="form-group"><input class="form-control form-control-user" type="email" v-model="email"
+                                    id="exampleInputEmail" aria-describedby="emailHelp" required placeholder="E-mail"
+                                    name="email"></div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
+                                        type="password" v-model="password" id="examplePasswordInput" required placeholder="Password"
+                                        name="password"></div>
+                                <div class="col-sm-6"><input class="form-control form-control-user" type="password" v-model="conf_password"
+                                        id="exampleRepeatPasswordInput" required placeholder="Confirmar password"
+                                        name="password_repeat"></div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <select class="form-control" style="width: auto;" v-model="cargo">
+                                        <option value="12" selected="">Nível de acesso</option>
+                                        <option value="13">Administrador</option>
+                                        <option value="14">Arq. IGCA</option>
+                                        <option value="14">Técnico</option>
+                                    </select></div>
+                            </div> 
+                                <button  class="btn btn-primary btn-block text-white btn-user" type="submit">Registar</button>
+                            <hr>
+                        </form>
+                        <div class="text-center"></div>
+                        <div class="text-center"><a class="small" href="#/login">Já tem uma conta? Entrar!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
