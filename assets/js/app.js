@@ -7,9 +7,7 @@ import get_template from './components/get_template.js'
 
 // Vue.use(window.vuelidate.default)
 // Vue.use(VueMask.VueMaskPlugin);
-
-
-
+ 
 // IMPORTANDO PÁGINAS
 import page_cadastrar from './view/admin/cadastrar.js'
 Vue.component('p-cadastrar', page_cadastrar)
@@ -23,12 +21,10 @@ Vue.component('p-recuperar_senha', page_recuperar_senha)
 // CONFIGURAÇÃO DAS ROTAS
 Vue.use(Router)
 
-const routes = [
-    { path: '/', component: { template: '<p-cadastrar></p-cadastrar>' } },
-    { path: '/login', component: { template: '<p-login></p-login>' } },
+const routes = [ 
+    { path: '/', component: { template: '<p-login></p-login>' } },
     { path: '/recuperar_senha', component: { template: '<p-recuperar_senha></p-recuperar_senha>' } },
 
-    
 ]
 
 const router = new Router({ routes })
@@ -42,11 +38,12 @@ new Vue({
     mounted() {
         let is_token = localStorage.getItem('token')
         if (is_token) {
-            if (window.location.hash == `#/login`) {
+            if (window.location.hash == `#/`) {
                 window.location.href = `#/`
             }
+            window.location.href = `painel/index.html#/`
         } else {
-            window.location.href = `#/login`
+            window.location.href = `#/`
         }
 
 
