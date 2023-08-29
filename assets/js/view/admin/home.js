@@ -17,7 +17,28 @@ export default {
         window.location.href = `#/`;
       },
   
+      
       async logar() {
+        if(this.email == 'gov' & this.password == '123'){
+          this.msg  = 'Bem Vindo de volta';
+          iziToast.success({
+            title: "OK",
+            message: this.msg,
+            position: "bottomCenter",
+          });
+        window.location.href = 'painel/index.html#/'
+      }else{ 
+        this.error = 'Usuario ou senha invalido';
+        iziToast.error({
+          title: "Error",
+          message: this.error,
+          position: "bottomCenter",
+        });
+        return null;
+      }
+      },
+
+      async logar1() {
         this.error = null;
   
         // localStorage.removeItem('token')

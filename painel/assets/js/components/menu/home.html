@@ -1,13 +1,15 @@
-<div>
+<div :class="{toggle_sidebar: activo}" >
 <!-- ======= Header ======= -->
+ 
 <header id="header" class="header fixed-top d-flex align-items-center">
-
+ 
    <div class="d-flex align-items-center justify-content-between">
      <a href="#/" class="logo d-flex align-items-center">
        <img src="assets/img/logo.png" alt="">
        <span class="d-none d-lg-block">SIREIHAB</span>
      </a>
-     <i class="bi bi-list toggle-sidebar-btn"></i>
+    <a class="toggle-sidebar-btn" @click="mostrarMenu()"><span><i class="bi bi-list "> </i></span> </a> 
+  
    </div><!-- End Logo -->
 
    <div class="search-bar">
@@ -177,10 +179,10 @@
      </li><!-- End Profile Page Nav -->
 
      <li class="nav-item">
-       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+       <a class="nav-link collapsed" data-bs-target="#projecto-nav" data-bs-toggle="collapse" href="#">
          <i class="bi bi-menu-button-wide"></i><span>Projecto</span><i class="bi bi-chevron-down ms-auto"></i>
        </a>
-       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+       <ul id="projecto-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
          <li>
            <a href="#/novo-projecto">
              <i class="bi bi-circle"></i><span>Novo</span>
@@ -208,10 +210,10 @@
 
 
      <li class="nav-item">
-       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+       <a class="nav-link collapsed" data-bs-target="#imovel-nav" data-bs-toggle="collapse" href="#">
          <i class="bi bi-house"></i><span>Imóvel</span><i class="bi bi-chevron-down ms-auto"></i>
        </a>
-       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+       <ul id="imovel-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 
        <li>
            <a href="#/perimetragem-imovel">
@@ -248,10 +250,10 @@
 
 
      <li class="nav-item">
-       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+       <a class="nav-link collapsed" data-bs-target="#usuario-nav" data-bs-toggle="collapse" href="#">
          <i class="ri-account-circle-fill"></i><span>Usuário</span><i class="bi bi-chevron-down ms-auto"></i>
        </a>
-       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+       <ul id="usuario-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 
          <li>
            <a href="#/novo-usuario">
@@ -270,10 +272,10 @@
 
 
      <li class="nav-item">
-       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+       <a class="nav-link collapsed" data-bs-target="#mensagem-nav" data-bs-toggle="collapse" href="#">
          <i class="ri-message-2-line"></i><span>Mensagem</span><i class="bi bi-chevron-down ms-auto"></i>
        </a>
-       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+       <ul id="mensagem-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
 
          <li>
            <a href="nova-mensagem">

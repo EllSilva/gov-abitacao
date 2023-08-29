@@ -3,8 +3,9 @@ import get_template from '../../components/get_template.js'
 export default {
     data: function () {
         return {
-            title: "home",
+            title: "home", 
             activo: false, 
+
             activo1: true,
             activo2: false,
             activo3: false,
@@ -15,7 +16,7 @@ export default {
 
     methods: {
  
-        mostrarMenu() {  
+        mostrarMenu() {   
             this.activo = !this.activo; 
         },
       

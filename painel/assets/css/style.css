@@ -392,6 +392,7 @@ h6 {
   padding-left: 10px;
   cursor: pointer;
   color: #012970;
+    /* display:none; */ 
 }
 
 .header .search-bar {
@@ -638,19 +639,19 @@ h6 {
 }
 
 @media (max-width: 1199px) {
-  .toggle-sidebar .sidebar {
+  .toggle_sidebar .sidebar {
     left: 0;
   }
 }
 
 @media (min-width: 1200px) {
 
-  .toggle-sidebar #main,
-  .toggle-sidebar #footer {
+  .toggle_sidebar #main,
+  .toggle_sidebar #footer {
     margin-left: 0;
   }
 
-  .toggle-sidebar .sidebar {
+  .toggle_sidebar .sidebar {
     left: -300px;
   }
 }

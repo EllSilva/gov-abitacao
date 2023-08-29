@@ -36,15 +36,15 @@ new Vue({
     computed: {},
     methods: {},
     mounted() {
-        let is_token = localStorage.getItem('token')
-        if (is_token) {
-            if (window.location.hash == `#/`) {
-                window.location.href = `#/`
-            }
-            window.location.href = `painel/index.html#/`
-        } else {
-            window.location.href = `#/`
-        }
+   //     let is_token = localStorage.getItem('token')
+   //     if (is_token) {
+   //         if (window.location.hash == `#/`) {
+     //           window.location.href = `#/`
+     //       }
+     //       window.location.href = `painel/index.html#/`
+      //  } else {
+     //       window.location.href = `#/`
+     //   }
 
 
     },
