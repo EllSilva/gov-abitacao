@@ -392,7 +392,7 @@ h6 {
   padding-left: 10px;
   cursor: pointer;
   color: #012970;
-    /* display:none; */ 
+  display:none;  
 }
 
 .header .search-bar {
@@ -618,6 +618,10 @@ h6 {
   .sidebar {
     left: -300px;
   }
+.header .toggle-sidebar-btn { 
+  display:block;  
+}
+
 }
 
 .sidebar::-webkit-scrollbar {
