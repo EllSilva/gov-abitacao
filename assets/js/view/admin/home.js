@@ -9,6 +9,7 @@ export default {
         password: null,
         error: null,
         msg: null,
+        isloaded: true
       };
     },
   
@@ -26,7 +27,11 @@ export default {
             message: this.msg,
             position: "bottomCenter",
           });
-        window.location.href = 'painel/index.html#/'
+          this.isloaded = false
+          setTimeout(() => {
+            window.location.href = 'painel/index.html#/'
+          }, 500)
+     
       }else{ 
         this.error = 'Usuario ou senha invalido';
         iziToast.error({

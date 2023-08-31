@@ -28,6 +28,8 @@ Vue.component('p-bloco', page_bloco)
 import page_usuario from './view/usuario/home.js'
 Vue.component('p-usuario', page_usuario)
 
+import page_mensagem from './view/mensagem/home.js'
+Vue.component('p-mensagem', page_mensagem)
 
 
 Vue.use(Router)
@@ -41,6 +43,7 @@ const routes = [
     { path: '/perimetragem-imovel', component: { template: '<p-home></p-home>' } },
     { path: '/perimetragem-bloco', component: { template: '<p-bloco></p-bloco>' } },
     { path: '/novo-usuario', component: { template: '<p-usuario></p-usuario>' } },
+    { path: '/nova-mensagem', component: { template: '<p-mensagem></p-mensagem>' } },
 
 ]
 
