@@ -25,6 +25,10 @@ Vue.component('p-imovel', page_imovel)
 import page_bloco from './view/imovel/bloco.js'
 Vue.component('p-bloco', page_bloco)
 
+import page_cadastro from './view/imovel/cadastro.js'
+Vue.component('p-cadastro', page_cadastro)
+
+
 import page_usuario from './view/usuario/home.js'
 Vue.component('p-usuario', page_usuario)
 
@@ -42,6 +46,7 @@ const routes = [
     { path: '/novo-mapa', component: { template: '<p-novo_mapa></p-novo_mapa>' } },
     { path: '/perimetragem-imovel', component: { template: '<p-home></p-home>' } },
     { path: '/perimetragem-bloco', component: { template: '<p-bloco></p-bloco>' } },
+    { path: '/cadastro-imovel', component: { template: '<p-cadastro></p-cadastro>' } },
     { path: '/novo-usuario', component: { template: '<p-usuario></p-usuario>' } },
     { path: '/nova-mensagem', component: { template: '<p-mensagem></p-mensagem>' } },
 

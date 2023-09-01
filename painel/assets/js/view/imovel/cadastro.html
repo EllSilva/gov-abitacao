@@ -1,0 +1,1020 @@
+<div>
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Perimetragem Bloco</h1>
+
+    </div><!-- End Page Title -->
+
+    <section class="section contact">
+
+      <div class="row gy-4">
+
+        <div class="col-xl-12">
+          <div class="card p-4">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <!-- Default Tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="processo-tab" data-bs-toggle="tab" data-bs-target="#processo"
+                      type="button" role="tab" aria-controls="processo" aria-selected="true">Processo (A preencher pelos
+                      serviços)</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="singular1-tab" data-bs-toggle="tab" data-bs-target="#singular1"
+                      type="button" role="tab" aria-controls="singular1 " aria-selected="false">Pessoa singular1
+                      (proprietário inicial do prédio)</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="singular2-tab" data-bs-toggle="tab" data-bs-target="#singular2"
+                      type="button" role="tab" aria-controls="singular2 " aria-selected="false">Pessoa singular
+                      (inquilino/comprador)</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="entidade-tab" data-bs-toggle="tab" data-bs-target="#entidade"
+                      type="button" role="tab" aria-controls="entidade " aria-selected="false">Entidade legal (titular
+                      do prédio)</button>
+                  </li>
+
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="representante-tab" data-bs-toggle="tab" data-bs-target="#representante"
+                      type="button" role="tab" aria-controls="representante "
+                      aria-selected="false">Representante</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="predio-tab" data-bs-toggle="tab" data-bs-target="#predio" type="button"
+                      role="tab" aria-controls="predio " aria-selected="false">Prédio</button>
+                  </li>
+
+
+                </ul>
+                <div class="tab-content pt-2" id="myTabContent">
+
+
+                  <div class="tab-pane fade show active" id="processo" role="tabpanel" aria-labelledby="processo-tab">
+
+                    <div class="row g-3">
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nome_Input">
+                          <label for="nome_Input">Código do processo </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option value="12" selected>Cadastro</option>
+                            <option value="13">Transmissão</option>
+                            <option value="14">Permuta</option>
+                            <option value="">Alienação</option>
+                            <option value="">Atribuição</option>
+                            <option value="">Outro</option>
+                          </select>
+
+                          </select>
+                          <label for="floatingSelect">Tipo de processo</label>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                    <div class="col-sm-12">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ruaInput" placeholder="nome do tecnico">
+                        <label for="ruaInput">Técnico</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="blocoInput" placeholder="Data">
+                        <label for="blocoInput">Data de submissão</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                      <div class="form-floating mb-3">
+                        <textarea name="message" type="text" class="form-control" id="message"
+                          placeholder="SUA MENSAGEM..." required=""></textarea>
+                        <label for="message">Comentários</label>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+
+                  <div class="tab-pane fade show" id="singular1" role="tabpanel" aria-labelledby="singular1-tab">
+
+                    <div class="row g-3">
+
+                      <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nome_Input">
+                          <label for="nome_Input">Nome </label>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="sobnome_Input">
+                          <label for="sobnome_Input">Sobrenome</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Masculino</option>
+                            <option>Feminino</option>
+                          </select>
+                          <label for="floatingSelect">Género</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+                            <option value="12" selected="">Passaporte (para estrangeiros)</option>
+                            <option value="13">Bilhete de identidade</option>
+                            <option value="13">Certidão de nascimento</option>
+                            <option value="13">Cartão de residente</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="floatingSelect">Documento de identificação</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="file" class="form-control" id="telefoneInput">
+                          <label for="telefoneInput">Escolher o Documento</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="telefoneInput">
+                          <label for="telefoneInput">Número de identificação</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+
+                          <input type="date" class="form-control" id="formFile">
+                          <label for="formFile"> .*** Data de validade ***</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="date" class="form-control" id="formFile2">
+                          <label for="formFile2"> .*** Data de nascimento ***</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Solteiro (a)</option>
+                            <option value="13">Casado (a)</option>
+                            <option value="13">Divorciado (a)</option>
+                            <option value="13">Viúvo (a)</option>
+                            <option value="13">União de facto</option>
+
+                          </select>
+                          <label for="paisInput">Estado civíl</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Municipio</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Bairro</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Casa Nº</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Telefone</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y12Input" placeholder="name@example.com">
+                          <label for="y12Input">Telefone Alt</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="y123Input" placeholder="name@example.com">
+                          <label for="y123Input">Email</label>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="tab-pane fade show" id="singular2" role="tabpanel" aria-labelledby="singular2-tab">
+
+                    <div class="row g-3">
+
+                      <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nome_Input">
+                          <label for="nome_Input">Nome </label>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="sobnome_Input">
+                          <label for="sobnome_Input">Sobrenome</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Masculino</option>
+                            <option>Feminino</option>
+                          </select>
+                          <label for="floatingSelect">Género</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+                            <option value="12" selected="">Passaporte (para estrangeiros)</option>
+                            <option value="13">Bilhete de identidade</option>
+                            <option value="13">Certidão de nascimento</option>
+                            <option value="13">Cartão de residente</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="floatingSelect">Documento de identificação</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="file" class="form-control" id="telefoneInput">
+                          <label for="telefoneInput">Escolher o Documento</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="telefoneInput">
+                          <label for="telefoneInput">Número de identificação</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+
+                          <input type="date" class="form-control" id="formFile">
+                          <label for="formFile"> .*** Data de validade ***</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="date" class="form-control" id="formFile2">
+                          <label for="formFile2"> .*** Data de nascimento ***</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Solteiro (a)</option>
+                            <option value="13">Casado (a)</option>
+                            <option value="13">Divorciado (a)</option>
+                            <option value="13">Viúvo (a)</option>
+                            <option value="13">União de facto</option>
+
+                          </select>
+                          <label for="paisInput">Estado civíl</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Municipio</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Bairro</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Casa Nº</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Telefone</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y12Input" placeholder="name@example.com">
+                          <label for="y12Input">Telefone Alt</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="y123Input" placeholder="name@example.com">
+                          <label for="y123Input">Email</label>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="tab-pane fade" id="entidade" role="tabpanel" aria-labelledby="entidade-tab">
+                    <div class="row g-3">
+
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+                            <option value="12" selected="">Público</option>
+                            <option value="13">Privado</option>
+                            <option value="13">ONG</option>
+                            <option value="13">Religiosa</option>
+                            <option value="13">Outra</option>
+
+                          </select>
+                          <label for="floatingSelect">Tipo de entidade legal</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">País de origem</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nomeInput">
+                          <label for="nomeInput">Nome</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="regInput" placeholder="name@example.com">
+                          <label for="regInput">Número de registro</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="date" class="form-control" id="formFile2">
+                          <label for="formFile2"> Data de criação</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="nifInput" placeholder="Digita aqui o Nif">
+                          <label for="nifInput">NIF</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Municipio</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Bairro</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Casa Nº</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Telefone</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y12Input" placeholder="name@example.com">
+                          <label for="y12Input">Telefone Alt</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="y123Input" placeholder="name@example.com">
+                          <label for="y123Input">Email</label>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="representante" role="tabpanel" aria-labelledby="representante-tab">
+
+                    <div class="row g-3">
+
+                      <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nome_Input">
+                          <label for="nome_Input">Nome </label>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="sobnome_Input">
+                          <label for="sobnome_Input">Sobrenome</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Masculino</option>
+                            <option>Feminino</option>
+                          </select>
+                          <label for="floatingSelect">Género</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+                            <option value="12" selected="">Passaporte (para estrangeiros)</option>
+                            <option value="13">Bilhete de identidade</option>
+                            <option value="13">Certidão de nascimento</option>
+                            <option value="13">Cartão de residente</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="floatingSelect">Documento de identificação</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="file" class="form-control" id="telefoneInput">
+                          <label for="telefoneInput">Escolher o Documento</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="telefoneInput">
+                          <label for="telefoneInput">Número de identificação</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+
+                          <input type="date" class="form-control" id="formFile">
+                          <label for="formFile"> .*** Data de validade ***</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="date" class="form-control" id="formFile2">
+                          <label for="formFile2"> .*** Data de nascimento ***</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nif_Input">
+                          <label for="nif_Input">NIF </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Solteiro (a)</option>
+                            <option value="13">Casado (a)</option>
+                            <option value="13">Divorciado (a)</option>
+                            <option value="13">Viúvo (a)</option>
+                            <option value="13">União de facto</option>
+
+                          </select>
+                          <label for="paisInput">Estado civíl</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="paisInput" aria-label="Floating label select example">
+                            <option value="12" selected="">País</option>
+                            <option value="13">Angola</option>
+                            <option value="13">Portugal</option>
+                            <option value="13">Brasil</option>
+                            <option value="13">Moçambique</option>
+
+                          </select>
+                          <label for="paisInput">Pais</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Provincia</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Municipio</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Bairro</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="provInput" placeholder="name@example.com">
+                          <label for="provInput">Casa Nº</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Telefone</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y12Input" placeholder="name@example.com">
+                          <label for="y12Input">Telefone Alt</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="y123Input" placeholder="name@example.com">
+                          <label for="y123Input">Email</label>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="predio" role="tabpanel" aria-labelledby="predio-tab">
+                 
+                    <div class="row g-3">
+ 
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="x1Input" placeholder="name@example.com">
+                          <label for="x1Input">X1</label>
+                        </div>
+                      </div>
+  
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Y1</label>
+                        </div>
+                      </div>
+  
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="x1Input" placeholder="name@example.com">
+                          <label for="x1Input">X1</label>
+                        </div>
+                      </div>
+  
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Y1</label>
+                        </div>
+                      </div>
+  
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="x1Input" placeholder="name@example.com">
+                          <label for="x1Input">X1</label>
+                        </div>
+                      </div>
+  
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Y1</label>
+                        </div>
+                      </div>
+  
+                    
+
+                      <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          
+                              <option value="12" selected="">Auto de vistoria</option>
+                              <option value="13">Levantamento de campo</option>
+                              <option value="13">Fotogrametria</option>
+                              <option value="13">Plano</option>
+                              <option value="13">Mapa histórico</option>
+                              <option value="13">Mapa topográfico</option>
+                              <option value="13">Ortofato</option>
+                              <option value="13">Outro</option> 
+                          </select>
+                          <label for="floatingSelect">Fonte das coordenadas</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+
+                          <input type="date" class="form-control" id="formFile">
+                          <label for="formFile"> Data da fonte</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y1Input" placeholder="name@example.com">
+                          <label for="y1Input">Número do lote</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y2Input" placeholder="name@example.com">
+                          <label for="y2Input">Número do bloco</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="y3Input" placeholder="name@example.com">
+                          <label for="y3Input">Número da casa</label>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="temInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Concessão administrativa</option>
+                            <option value="13">Direito de propriedade</option>
+                            <option value="13">Direito de superfície</option>
+                            <option value="13">Direito de ocupação precária</option>
+                            <option value="13">Posse</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="temInput">Tipo de posse</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="temInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Habitação</option>
+                            <option value="13">Comércio</option>
+                            <option value="13">Serviços</option>
+                            <option value="13">Religioso</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="temInput">Tipo de uso da terra</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="temInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Zango 0</option>
+                            <option value="13">Zango 1</option>
+                            <option value="13">Zango 2</option>
+                            <option value="13">Zango 4</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="temInput">Nome do projecto</label>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="col-sm-12">
+                        <div class="form-floating mb-3">
+                          <textarea name="message" type="text" class="form-control" id="message"
+                            placeholder="SUA MENSAGEM..." required=""></textarea>
+                          <label for="message">Finalidade</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="temInput" aria-label="Floating label select example">
+                            <option value="12" selected="">sim</option>
+                            <option value="13">Nao</option>
+                          </select>
+                          <label for="temInput">Tem construção?</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="resgInput" aria-label="Floating label select example">
+                            <option value="12" selected="">Alvenaria</option>
+                            <option value="13">Parede pré-moldada</option>
+                            <option value="13">Madeira</option>
+                            <option value="13">Chapa</option>
+                            <option value="13">Outro</option>
+                          </select>
+                          <label for="resgInput">Tipo de construção?</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="form-floating mb-3">
+                          <input type="date" class="form-control" id="y12Input" placeholder="name@example.com">
+                          <label for="y12Input">Ano de construção</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="resgInput" aria-label="Floating label select example">
+                            <option value="12" selected="">sim</option>
+                            <option value="13">Nao</option>
+                            <option value="13">Sem Informacao</option>
+                          </select>
+                          <label for="resgInput">Registo predial?</label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12">
+                        <div class="form-floating mb-3">
+                          <textarea name="message" type="text" class="form-control" id="message"
+                            placeholder="SUA MENSAGEM..." required=""></textarea>
+                          <label for="message">Descricao Norte</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-floating mb-3">
+                          <textarea name="message" type="text" class="form-control" id="message"
+                            placeholder="SUA MENSAGEM..." required=""></textarea>
+                          <label for="message">Descricao Sul</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-floating mb-3">
+                          <textarea name="message" type="text" class="form-control" id="message"
+                            placeholder="SUA MENSAGEM..." required=""></textarea>
+                          <label for="message">Descricao Este</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-floating mb-3">
+                          <textarea name="message" type="text" class="form-control" id="message"
+                            placeholder="SUA MENSAGEM..." required=""></textarea>
+                          <label for="message">Descricao Oeste</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <button type="submit">Salvar</button>
+                    </div>
+                  </div>
+
+                </div><!-- End Default Tabs -->
+
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+</div>
