@@ -1,0 +1,62 @@
+
+.status_CONFIRMED {
+    color: #50cd89;
+    background-color: #e8fff3
+}
+
+.status_REFUNDED {
+    background-color: #700370;
+    color: #835783; 
+}
+
+.status_pending_refund {
+    background-color: #ff00ff;
+    color: #ffd0ff; 
+}
+
+.status_chargedback {
+    background-color: #b900b9;
+    color: #e7c0e7; 
+}
+
+
+.status_refused {
+    background-color: #ff8c00;
+    color: #f8cf9e; 
+}
+.status_OVERDUE {
+    color: #f1416c;
+    background-color: #fff5f8
+
+}
+.status_waiting_payment {
+    color: #bdc917;
+    background-color: #f9fcd6
+}
+
+.status_PENDING {
+    color: #9c9e19;
+    background-color: #ebeec7
+}
+ 
+.status_processing {
+    color: #bdc917;
+    background-color: #f8fae3
+}
+
+.status_authorized {
+    color: #0400ff;
+    background-color: #685ef8
+}
+
+
+.tipo_UNICO {
+    color: #f1416c;
+    background-color: #fff5f8 
+}
+.tipo_RECORRENTE {
+    color: #50cd89;
+    background-color: #e8fff3
+
+}
+
